@@ -31,7 +31,6 @@ crashed = False
 font = pygame.font.Font('freesansbold.ttf', 22) 
 flag =0 
 
-image_dir = 'chess_pieces_images/'
 
 # information array-------------------------------------------------------------------------------------------
 pieces = ['king','queen','bishop1','bishop2','knight1','knight2','rook1','rook2','pawn1','pawn2','pawn3','pawn4',
@@ -45,7 +44,7 @@ black_images_loc = ["Chess_kb.png","Chess_qb.png","Chess_bb.png","Chess_bb.png",
                     "Chess_pb.png","Chess_pb.png","Chess_pb.png","Chess_pb.png"]
 j=0
 for i in pieces:
-    black_images[i] = pygame.image.load(image_dir+black_images_loc[j])
+    black_images[i] = pygame.image.load(black_images_loc[j])
     j+=1
 
 white_pieces = {'king': (1, 'e'),'queen': (1, 'd'),'bishop1': (1, 'c'),'bishop2': (1, 'f'),'knight1': (1, 'b'),
@@ -58,7 +57,7 @@ white_images_loc = ["Chess_kw.png","Chess_qw.png","Chess_bw.png","Chess_bw.png",
                     "Chess_pw.png","Chess_pw.png","Chess_pw.png","Chess_pw.png"]
 j=0
 for i in pieces:
-    white_images[i] = pygame.image.load(image_dir+white_images_loc[j])
+    white_images[i] = pygame.image.load(white_images_loc[j])
     j+=1
     
     
